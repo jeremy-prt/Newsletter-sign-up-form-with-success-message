@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="box-content">
+          <h1>Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul>
+            <li>
+              <img src="./assets/images/icon-list.svg" alt="" /> Product
+              discovery and building what matters
+            </li>
+            <li>
+              <img src="./assets/images/icon-list.svg" alt="" /> Measuring to
+              ensure updates are a success
+            </li>
+            <li>
+              <img src="./assets/images/icon-list.svg" alt="" /> And much more!
+            </li>
+          </ul>
+          <div class="mail">
+            <div class="content">
+              <p>Email adress</p>
+              <p class="mail-error">Valid email required</p>
+            </div>
+            <input
+              type="email"
+              id="email-input"
+              placeholder="email@compagny.comsds"
+            />
+          </div>
+          <button id="subscribe-button">Subscribe to monthly newsletter</button>
+        </div>
+        <div class="box-image">
+          <img
+            class="desktop"
+            src="./assets/images/illustration-sign-up-desktop.svg"
+            alt=""
+          />
+          <img
+            class="mobile"
+            src="./assets/images/illustration-sign-up-mobile.svg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="container succes">
+        <div class="top">
+          <img src="./assets/images/icon-success.svg" alt="" />
+        </div>
+        <div class="title">
+          <h1>Thanks for subscribing!</h1>
+        </div>
+        <div class="content">
+          <p>
+            A confirmation email has been sent to
+            <span id="confirmation-email">ash@loremcompany.com</span>. Please
+            open it and click the button inside to confirm your subscription.
+          </p>
+        </div>
+        <div class="bottom">
+          <button id="dismiss-button">Dismiss message</button>
+        </div>
+      </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
